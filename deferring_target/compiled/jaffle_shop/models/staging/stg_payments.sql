@@ -1,17 +1,11 @@
 with source as (
-    
-    {#-
-    Normally we would select from the table here, but we are using seeds to load
-    our data in this project
-    #}
-    select * from {{ ref('raw_payments') }}
+    select * from "dbttest1"."public"."raw_payments"
 
 ),
 
 renamed as (
 
     select
-	1 as something,
         id as payment_id,
         order_id,
         payment_method,
