@@ -21,3 +21,5 @@ renamed as (
 )
 
 select * from renamed
+
+-- asdasdasd
