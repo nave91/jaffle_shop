@@ -9,7 +9,7 @@ analysis-paths: ["analysis"]
 test-paths: ["tests"]
 seed-paths: ["data"]
 macro-paths: ["macros"]
-packages-install-path: /usr/src/app/test
+packages-install-path: /usr/test
 
 target-path: "target"
 clean-targets:
