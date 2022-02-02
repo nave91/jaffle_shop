@@ -9,6 +9,7 @@ analysis-paths: ["analysis"]
 test-paths: ["tests"]
 data-paths: ["data"]
 macro-paths: ["macros"]
+packages-install-path: /tmp/test
 
 target-path: "target"
 clean-targets:
