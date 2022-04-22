@@ -1,0 +1,2 @@
+packages:
+  - git: "https://{{env_var('DBT_ENV_SECRET_GIT_CREDENTIAL')}}@github.com/nave91/jaffle_shop_private.git"
