@@ -1,2 +1,2 @@
 packages:
-  - git: "https://github.com/dbt-labs/dbt-utils-private.git"
+  - git: "https://{DBT_ENV_SECRET_GIT_CREDENTIAL}@github.com/dbt-labs/dbt-utils-private.git"
