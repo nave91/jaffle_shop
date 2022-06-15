@@ -24,7 +24,7 @@ delay_ as (
         null as first_order,
         null as most_recent_order,
         null as number_of_orders,
-        pg_sleep(30) as nothing
+        pg_sleep(3000) as nothing
 )
 
 select
