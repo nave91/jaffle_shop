@@ -30,6 +30,10 @@ customer_orders as (
 
 ),
 
+random_delay as (
+    select 1 as something, pg_sleep(3000)
+),
+
 customer_payments as (
 
     select
@@ -40,6 +44,8 @@ customer_payments as (
 
     left join orders on
          payments.order_id = orders.order_id
+    left join random_delay on
+        orders.order_id = random_delay.something
 
     group by orders.customer_id
 
