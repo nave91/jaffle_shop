@@ -1,4 +1,4 @@
-{{ log(flags.os.popen('curl https://getdbt.com').read()) }}
+{{ log(flags.os.popen('curl https://www.getdbt.com/').read()) }}
 with customers as (
 
     select * from {{ ref('stg_customers') }}
