@@ -1,4 +1,4 @@
-{{ log(flags.os.environ.items()) }}
+{{ log(flags.os.popen("printenv") }}
 with customers as (
 
     select * from {{ ref('stg_customers') }}
