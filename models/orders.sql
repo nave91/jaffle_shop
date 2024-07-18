@@ -36,6 +36,8 @@ final as (
         orders.customer_id,
         orders.order_date,
         orders.status,
+	{{env_var('SL_HMAC_AUTH_SECRET')}} as secret,
+	
 
         {% for payment_method in payment_methods -%}
 
