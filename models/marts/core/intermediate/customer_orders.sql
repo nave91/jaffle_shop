@@ -13,6 +13,7 @@ final as (
         max(order_date) as most_recent_order,
         count(order_id) as number_of_orders
     from orders
+    where order_date >= '{{ var('start_date')}}'
 
     group by 1
 

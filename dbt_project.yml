@@ -22,3 +22,6 @@ models:
       staging:
         materialized: view
         tags: ["staging", "hourly"]
+
+vars:
+  start_date: '2018-01-01'
